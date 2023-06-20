@@ -1,0 +1,290 @@
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.body-bg {
+    /* background-image: url('../images/bois-texture-1456353976vDQ.jpg'); */
+    /* background-image: url('https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/1631/posts/38859/image-upload/LiquidBackground027.jpg'); */
+    background-image: url('http://bgfons.com/uploads/water/water_texture2339.jpg');
+    background-size: cover;
+}
+
+.color-grey {
+    color: #4b4b4b;
+    /* color: orange; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.cv-header,
+.profile,
+.experience,
+.company-name {
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.cv {
+    margin-top: 50px;
+    border: 1px solid #4b4b4b;
+    box-shadow: 1px 1px 10px #000;
+}
+
+.cv-left {
+    background: #1a383c;
+    min-height: 30vh;
+    color: #fff;
+}
+
+.cv-right {
+    background: #fff;
+    min-height: 30vh;
+    color: #131313;
+}
+
+
+.cv-left a {
+    color: #fff;
+}
+
+.cv-left a:hover {
+    text-decoration: none;
+}
+
+.cv-left ul {
+    line-height: 175%;
+    padding-left: 30px;
+}
+
+.cv-left ul.contacts-block {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.cv-left .address {
+    font-style: italic;
+}
+
+article {
+    padding: 20px;
+}
+
+.company-name {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.company-name i {
+    font-size: .8rem;
+    font-family: Aria, sans-serif;
+    text-transform: none;
+}
+
+.job-title {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.lines {
+    overflow: hidden;
+}
+
+.lines::before,
+.lines::after {
+    content: "";
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 3px;
+    background: #4b4b4b;
+    border: 1px solid #fff;
+    vertical-align: middle;
+}
+
+.lines::before {
+    margin-left: -100%;
+}
+
+.lines::after {
+    margin-right: -100%;
+}
+
+@media (max-width: 991.98px) {
+
+    .cv-left h1,
+    .cv-left h2,
+    .cv-left h3,
+    .cv-left h4 {
+        font-size: 1.3rem;
+    }
+
+    .cv-left ul {
+        line-height: 150%;
+        padding-left: 25px;
+    }
+
+}
+
+.foto {
+
+    width: 87%;
+    height: auto;
+
+    margin: 30px 20px 27px 17px;
+    ;
+
+    border: #fff 3px solid;
+}
+
+@media (max-width: 575.98px) {
+    .cv {
+        margin-top: 0;
+    }
+
+    .photo-block img {
+        display: block;
+        justify-content: center;
+        max-width: 50%;
+        margin: 20px auto;
+    }
+}
+
+.address {
+    text-align: center;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 767px) {
+    .mb-5 {
+        width: 100%;
+
+    }
+}
+
+.achievements-images-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 1200px;
+
+}
+
+.achievements-images-container .image-link {
+    display: block;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal Content */
+.modal-content {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+.modal-content {
+    display: block;
+    margin-top: 6%;
+    max-width: 50%;
+    height: auto;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive Columns */
+@media screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
