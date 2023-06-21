@@ -4,8 +4,6 @@ body {
 }
 
 .body-bg {
-    /* background-image: url('../images/bois-texture-1456353976vDQ.jpg'); */
-    /* background-image: url('https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/1631/posts/38859/image-upload/LiquidBackground027.jpg'); */
     background-image: url('http://bgfons.com/uploads/water/water_texture2339.jpg');
     background-size: cover;
 }
@@ -172,24 +170,6 @@ section {
         width: 100%;
 
     }
-}
-
-.achievements-images-container {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    width: 1200px;
-
-}
-
-.achievements-images-container .image-link {
-    display: block;
-    margin: 20px;
-    text-align: center;
-    text-decoration: none;
-    color: #333;
-    cursor: pointer;
-
 }
 
 
