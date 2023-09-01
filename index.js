@@ -26,3 +26,14 @@ span.onclick = function () {
         visibleLink.classList.remove("visible-link");
     }
 }
+
+// Close the modal when the user clicks outside of the image
+modal.onclick = function (event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
+        let visibleLink = document.querySelector(".visible-link");
+        if (visibleLink) {
+            visibleLink.classList.remove("visible-link");
+        }
+    }
+}
